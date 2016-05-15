@@ -75,7 +75,7 @@ class GameScene: SKScene {
 
         bg2 = SKSpriteNode(imageNamed: "bg")
         bg2.position = CGPointMake(self.size.width * 0.5, self.size.height * 0.5)
-        bg2.xScale = 2.0
+        bg2.xScale = 2.0 // size of orignal image not correct.
         bg2.yScale = 1.0
         bg2.alpha = 0.8
         bg2.zPosition = -1
@@ -107,7 +107,7 @@ class GameScene: SKScene {
         
         nextButton = SKSpriteNode(imageNamed: "nextButton")
         nextButton.position = CGPointMake(self.size.width * 0.5, self.size.height * 0.25)
-        nextButton.setScale(0.5)
+        nextButton.setScale(0.5) // orignal size too big x3.
         nextButton.zPosition = 5
         addChild(nextButton)
 
